@@ -41,4 +41,5 @@ jobs:
     - name: Deploy to K8S
       run: |
         kubectl apply -f k8s/
+        kubectl rollout restart deployment user-deployment
         
