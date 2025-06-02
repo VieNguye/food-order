@@ -15,5 +15,6 @@ spec:
       containers:
       - name: user
         image: viennnguyen1301/user-service:latest
+        imagePullPolicy: Always
         ports:
         - containerPort: 5000
